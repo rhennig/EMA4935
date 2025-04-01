@@ -30,6 +30,7 @@ class AutoEncoder(torch.nn.Module):
 #
     def __init__(self):
         super(AutoEncoder, self).__init__()
+
 #
 ### Encode
 #
