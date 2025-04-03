@@ -36,15 +36,15 @@ class AutoEncoder(torch.nn.Module):
 #
     def Encoding(self, adjacency):
 
-        return
+        return latent
 #
 ### Decode
 #
-    def Decoding(self, embedding):
+    def Decoding(self, latent):
         
-        return
+        return adjacency
 #
-### Foorward pass
+### Forward pass
 #
     def forward(self, adjacency):
 
