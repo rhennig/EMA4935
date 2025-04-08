@@ -28,9 +28,13 @@ class AutoEncoder(torch.nn.Module):
 #
 ### Initialization
 #
-    def __init__(self):
+    def __init__(self, input_nf):
         super(AutoEncoder, self).__init__()
 
+        self.input_nf = input_nf
+
+        self.fc1 = torch.nn.Sequential(
+        )
 #
 ### Encode
 #
@@ -41,17 +45,15 @@ class AutoEncoder(torch.nn.Module):
 ### Decode
 #
     def Decoding(self, latent):
-        
+
         return adjacency
 #
 ### Forward pass
 #
     def forward(self, adjacency):
 
-        latent    = self.Encoding(adjacency)
-        adjacency = self.Decoding(latent)
-
         return adjacency
+
 
 ####################################################################################################
 
